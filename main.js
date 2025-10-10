@@ -26,11 +26,11 @@ class StudentInformationSystem {
 
         const sampleGrades = {
             "S2023001": [
-                { subject: "Mathematics", units: 3, grade: 1.75, trend: "up" },
-                { subject: "Programming", units: 3, grade: 1.50, trend: "stable" },
+                { subject: "PRACTICUM 1", units: 3, grade: 1.75, trend: "up" },
+                { subject: "PRACTICUM 2", units: 3, grade: 1.50, trend: "stable" },
                 { subject: "Database Systems", units: 3, grade: 1.25, trend: "up" },
-                { subject: "Web Development", units: 3, grade: 1.00, trend: "up" },
-                { subject: "Algorithms", units: 3, grade: 1.50, trend: "down" }
+                { subject: "SA101", units: 3, grade: 1.00, trend: "up" },
+                { subject: "IPT2", units: 3, grade: 1.50, trend: "down" }
             ],
             "S2023002": [
                 { subject: "Accounting", units: 3, grade: 2.00, trend: "stable" },
@@ -41,7 +41,7 @@ class StudentInformationSystem {
         };
 
         const sampleSchedule = [
-            { time: "8:00 - 9:30", monday: "Mathematics", tuesday: "Programming", wednesday: "Mathematics", thursday: "Programming", friday: "Algorithms" },
+            { time: "8:00 - 9:30", monday: "PRACTICUM 1 ", tuesday: "PRACTICUM 2", wednesday: "Mathematics", thursday: "Programming", friday: "Algorithms" },
             { time: "9:30 - 11:00", monday: "Web Development", tuesday: "Database Systems", wednesday: "Web Development", thursday: "Database Systems", friday: "Free" },
             { time: "11:00 - 12:30", monday: "Free", tuesday: "Algorithms", wednesday: "Free", thursday: "Algorithms", friday: "Mathematics" },
             { time: "1:30 - 3:00", monday: "Database Systems", tuesday: "Web Development", wednesday: "Database Systems", thursday: "Web Development", friday: "Programming" },
@@ -252,4 +252,5 @@ class StudentInformationSystem {
 }
 
 // Initialize the application
+
 const sis = new StudentInformationSystem();
