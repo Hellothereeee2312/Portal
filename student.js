@@ -85,9 +85,7 @@ class StudentDashboard {
             case 'schedule':
                 this.loadSchedule();
                 break;
-            case 'announcements':
-                this.loadAnnouncements();
-                break;
+            
             case 'messages':
                 this.loadMessages();
                 break;
@@ -581,4 +579,5 @@ class StudentDashboard {
 }
 
 // Initialize student dashboard
+
 const studentDashboard = new StudentDashboard();
