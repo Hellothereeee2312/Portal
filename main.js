@@ -18,7 +18,7 @@ class StudentInformationSystem {
         if (localStorage.getItem('sis_initialized')) return;
 
         const sampleStudents = [
-            { id: "S2023001", name: "John Doe", email: "john.doe@student.edu", course: "Computer Science", year: "3rd Year", status: "Active" },
+            { id: "S2023001", name: "John Vhincent Mark Reyes", email: "john.doe@student.edu", course: "Computer Science", year: "3rd Year", status: "Active" },
             { id: "S2023002", name: "Jane Smith", email: "jane.smith@student.edu", course: "Business Administration", year: "2nd Year", status: "Active" },
             { id: "S2023003", name: "Michael Johnson", email: "michael.johnson@student.edu", course: "Engineering", year: "4th Year", status: "Active" },
             { id: "S2023004", name: "Emily Davis", email: "emily.davis@student.edu", course: "Psychology", year: "1st Year", status: "Active" }
@@ -113,7 +113,7 @@ class StudentInformationSystem {
         
         if (isStudent) {
             if (username === 'student1' && password === '1234') {
-                this.currentUser = { id: "S2023001", name: "John Doe", role: "student" };
+                this.currentUser = { id: "S2023001", name: "John Vhincent Mark Reyes", role: "student" };
                 this.currentRole = "student";
                 this.showStudentDashboard();
             } else {
@@ -121,7 +121,7 @@ class StudentInformationSystem {
             }
         } else {
             if (username === 'admin' && password === '12e') {
-                this.currentUser = { id: "T001", name: "Dr. Smith", role: "teacher" };
+                this.currentUser = { id: "T001", name: "Mr. Chiong", role: "teacher" };
                 this.currentRole = "teacher";
                 this.showTeacherDashboard();
             } else {
@@ -226,9 +226,7 @@ class StudentInformationSystem {
         return JSON.parse(localStorage.getItem('grades') || '{}');
     }
 
-    getAnnouncements() {
-        return JSON.parse(localStorage.getItem('announcements') || '[]');
-    }
+    
 
     getMessages() {
         return JSON.parse(localStorage.getItem('messages') || '{}');
@@ -254,3 +252,4 @@ class StudentInformationSystem {
 // Initialize the application
 
 const sis = new StudentInformationSystem();
+
